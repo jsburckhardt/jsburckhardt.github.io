@@ -1,0 +1,50 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/debian
+{
+	"name": "blogs",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Debian version: bullseye, buster
+		// Use bullseye on local arm64/Apple Silicon.
+		"args": { "VARIANT": "ubuntu-20.04" }
+	},
+
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"files.insertFinalNewline": true,
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+					"path": "/usr/bin/zsh"
+					}
+				}
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"IBM.output-colorizer",
+				"oderwat.indent-rainbow",
+				"davidanson.vscode-markdownlint",
+				"eamodio.gitlens",
+				"eriklynd.json-tools",
+				"ms-vscode.go",
+				"searking.preview-vscode",
+				"adamhartford.vscode-base64",
+				"shardulm94.trailing-spaces",
+				"saekiraku.pin-up",
+				"timonwong.shellcheck",
+				"pomdtr.excalidraw-editor"
+			]
+		}
+	},
+	"remoteEnv": {
+        "HOST_PROJECT_PATH": "${localWorkspaceFolder}"
+    },
+	"remoteUser": "vscode",
+	"mounts": [
+        "source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,readonly",
+        "source=blogs-zshhistory,target=/commandhistory,type=volume"
+	]
+
+}
