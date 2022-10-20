@@ -6,7 +6,7 @@ date: 2022-10-20
 
 Hi all, this is a simple list of steps you'll need to follow to enable ssl in your jekyll website hosted on github pages.
 
-1. Go to your github site account in my case https://github.com/jsburckhardt
+1. Go to your github site account in my case <https://github.com/jsburckhardt>
 2. Go to your github settings
    ![image](https://user-images.githubusercontent.com/18494471/196944105-b3faaf2c-1df5-4393-878b-83c42e962118.png)
 3. Go to pages
@@ -17,4 +17,3 @@ Hi all, this is a simple list of steps you'll need to follow to enable ssl in yo
 5. Once verified, GitHub will queue a cert from letsencrypt.
    ![image](https://user-images.githubusercontent.com/18494471/196945797-37becd8b-27a5-4d33-ad65-21d3524fb6d7.png)
    ![image](https://user-images.githubusercontent.com/18494471/196945899-d62c9b34-e854-4225-9ec8-5aacb72e7e4e.png)
-
