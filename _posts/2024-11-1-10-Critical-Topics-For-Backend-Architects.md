@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ten critical topics for aspiring backend architects!
+title: Ten critical topics for aspiring backend architects!
 date: 2024-11-01
 ---
 
