@@ -1,4 +1,3 @@
-# Go Cheatsheet
 
 ## Go Project Structure
 
